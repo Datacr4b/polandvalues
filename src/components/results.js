@@ -4,6 +4,7 @@ import "./results.css";
 import { useSearchParams } from "react-router";
 import Bar from "./bar";
 import ideologies from "./ideologies";
+import candidates from "./candidates"
 
 function Results() {
     const [searchParams] = useSearchParams();
@@ -11,7 +12,9 @@ function Results() {
     const l = searchParams.get("l");
     const g = searchParams.get("g");
     const s = searchParams.get("s");
+    const a = searchParams.get("a").split(",");
     let ideology = "";
+    let candidate = "";
 
     const e_free = (100.0-e).toFixed(1);
     const l_order = (100.0-l).toFixed(1);
@@ -39,13 +42,14 @@ function Results() {
             left: {name: "conservative", icon: conservative, value: s},
             right: {name: "progressive", icon: environment, value: s_prog}
         },
-    ]
+    ];
 
     const calculateMatch = () => {
         let compareTotal = 0;
         let prevLowest = 1000000;
+        let prevBiggest = 0;
 
-        for (let i = 1; i < ideologies.length; i++)
+        for (let i = 0; i < ideologies.length; i++)
         {
 
             compareTotal = (Math.abs(e - ideologies[i].stats.econ)) + (Math.abs(l - ideologies[i].stats.legal)) + (Math.abs(g - ideologies[i].stats.global)) + (Math.abs(s - ideologies[i].stats.social))
@@ -54,6 +58,35 @@ function Results() {
                 prevLowest = compareTotal;
                 ideology = ideologies[i].name;
             }
+        }
+        compareTotal = 0;
+        for (let i = 0; i < candidates.length; i++)
+        {
+            let array = candidates[i].answers
+            for (let x = 0; x < array.length; x++)
+            {
+                
+                if (parseFloat(a[x]) === array[x] && parseFloat(a[x]) !== 0.0)
+                {
+                    compareTotal += 1;
+                }
+                else if (parseFloat(a[x]) === 0.0)
+                {
+                    continue;
+                }
+                else if (parseFloat(a[x])-0.5 === array[x] || parseFloat(a[x])+0.5 === array[x])
+                {
+                    compareTotal += 0.5;
+                }
+            }
+            if(compareTotal > prevBiggest)
+            {
+                prevBiggest = compareTotal;
+                console.log(compareTotal);
+                console.log(candidates[i].name);
+                candidate = candidates[i].name;
+            }
+            compareTotal = 0
         }
     };
 
@@ -85,6 +118,7 @@ function Results() {
             <br></br>
             <hr></hr>
             <h2>Closest Match: {ideology}</h2>
+            <h2>Closest Political Candidate: {candidate}</h2>
         </>
     );
 }

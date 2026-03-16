@@ -1,5 +1,5 @@
 import React from "react";
-import globe from "../images/globe.png";
+import poland from "../images/poland.png";
 import "./header-page.css";
 
 function HeaderPage() {
@@ -7,8 +7,8 @@ function HeaderPage() {
         <>
             <header>
                 <section className="header-content">
-                    <img id="logo" src={globe} height="150" alt="globe icon"></img>
-                    <h1 id="title"><b>ModernPol</b></h1>
+                    <img id="logo" src={poland} height="150" alt="globe icon"></img>
+                    <h1 id="title"><b style={{color: "#B53F47"}}>Poland</b><b>Values</b></h1>
                 </section>
                 <hr></hr>
             </header>

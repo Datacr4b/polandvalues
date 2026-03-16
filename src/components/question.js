@@ -11,6 +11,7 @@ function Question() {
     const [legalArray, setLegalArray] = useState([]);
     const [globalArray, setGlobalArray] = useState([]);
     const [socialArray, setSocialArray] = useState([]);
+    const [answerArray, setAnswerArray] = useState([]);
 
     let navigate = useNavigate();
 
@@ -48,7 +49,7 @@ function Question() {
             let final_global = calculateScores(global_result + deltaGlobal, maxScores.global);
             let final_social = calculateScores(social_result + deltaSocial, maxScores.social);
 
-            navigate(`/results?e=${final_econ}&l=${final_legal}&g=${final_global}&s=${final_social}`);
+            navigate(`/results?e=${final_econ}&l=${final_legal}&g=${final_global}&s=${final_social}&a=[${answerArray},${multiplier}]`);
 
             return;
         }
@@ -57,6 +58,7 @@ function Question() {
         setLegalArray(prev => ([...prev, deltaLegal]));
         setGlobalArray(prev => ([...prev, deltaGlobal]));
         setSocialArray(prev => ([...prev, deltaSocial]));
+        setAnswerArray(prev => ([...prev, multiplier]));
 
         setQuestionNumber(prev => (prev + 1));
     };

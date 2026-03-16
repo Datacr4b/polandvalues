@@ -23,9 +23,9 @@ function MainPage() {
             </div>
             <button className="test-button"><NavLink to="/test">Click to Start Test!</NavLink></button>
             <hr></hr>
-            <h1><b>What is ModernPol ?</b></h1>
-            <p>ModernPol is a political test designed to place you on 4 different ideological axis. Based on those values we will attempt to gauge your political ideology and 
-                pair you to political candidates. You will be presented with statements, you will answer your opinion to the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>. 
+            <h1><b>What is Poland Values ?</b></h1>
+            <p>Poland Values is a political test designed to place you on 4 different ideological axis. Based on those values we will attempt to gauge your political ideology and 
+                pair you to <b style={{color: "#B53F47"}}>Polish</b> political candidates. You will be presented with statements, you will answer your opinion to the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>. 
                 Each of those will pull you closer to one side of the ideological axis, when the test concludes you will receive a percentage compared to the maximum possible values 
                 on each of the ideological axis. <u>Answer honestly!</u></p>
             <br></br>

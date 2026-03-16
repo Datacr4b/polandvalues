@@ -6,7 +6,7 @@ const questionItems = [
             "legal": -5,
             "global": 0,
             "social": 0
-        }
+        },
     },
     {
         "question": "The means of production should be controlled by the state",
