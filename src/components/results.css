@@ -9,3 +9,15 @@
     justify-content: center;
     width: 100%;
 }
+
+.closest-container {
+    display: block;
+    position: absolute;
+    left: 4%;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 89.5%;
+    float: left;
+    background-color: aliceblue;
+    border-radius: 1rem 1rem 0 0;
+}

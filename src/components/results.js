@@ -15,6 +15,8 @@ function Results() {
     const a = searchParams.get("a").split(",");
     let ideology = "";
     let candidate = "";
+    let ideologyDescription = "";
+    let candidateDescription = "";
 
     const e_free = (100.0-e).toFixed(1);
     const l_order = (100.0-l).toFixed(1);
@@ -57,6 +59,7 @@ function Results() {
             {
                 prevLowest = compareTotal;
                 ideology = ideologies[i].name;
+                ideologyDescription = ideologies[i].description;
             }
         }
         compareTotal = 0;
@@ -85,6 +88,7 @@ function Results() {
                 console.log(compareTotal);
                 console.log(candidates[i].name);
                 candidate = candidates[i].name;
+                candidateDescription = candidates[i].description;
             }
             compareTotal = 0
         }
@@ -95,7 +99,7 @@ function Results() {
     return (
         <>
             <div className="title-container">
-                <h1>ModernPol</h1>
+                <h1>Poland Values</h1>
                 <hr></hr>
                 <h1>Results</h1>
             </div>
@@ -116,9 +120,12 @@ function Results() {
                 ))
             }
             <br></br>
-            <hr></hr>
-            <h2>Closest Match: {ideology}</h2>
-            <h2>Closest Political Candidate: {candidate}</h2>
+            <div className="closest-container">
+                <h2><b style={{color: "#B53F47"}}>Closest Match</b>: {ideology}</h2>
+                <p>{ideologyDescription}</p>
+                <h2><b style={{color: "#B53F47"}}>Closest Political Candidate</b>: {candidate}</h2>
+                <p>{candidateDescription}</p>
+            </div>
         </>
     );
 }

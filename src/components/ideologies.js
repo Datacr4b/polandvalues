@@ -6,7 +6,8 @@ const ideologies = [
             "legal": 100,
             "global": 50,
             "social": 10
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Libertarian Communism",
@@ -15,7 +16,8 @@ const ideologies = [
             "legal": 70,
             "global": 70,
             "social": 10
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Trotskyism",
@@ -24,7 +26,8 @@ const ideologies = [
             "legal": 60,
             "global": 100,
             "social": 20
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Marxism",
@@ -33,7 +36,8 @@ const ideologies = [
             "legal": 40,
             "global": 40,
             "social": 20
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Stalinism",
@@ -42,7 +46,8 @@ const ideologies = [
             "legal": 10,
             "global": 10,
             "social": 50
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Maoism",
@@ -51,7 +56,8 @@ const ideologies = [
             "legal": 0,
             "global": 0,
             "social": 50
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Nazism",
@@ -60,7 +66,8 @@ const ideologies = [
             "legal": 0,
             "global": 0,
             "social": 90
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Fascism",
@@ -69,7 +76,8 @@ const ideologies = [
             "legal": 0,
             "global": 15,
             "social": 80
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Theocratic Socialism",
@@ -78,7 +86,8 @@ const ideologies = [
             "legal": 50,
             "global": 50,
             "social": 90
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Democratic Socialism",
@@ -87,7 +96,8 @@ const ideologies = [
             "legal": 70,
             "global": 50,
             "social": 20
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Libertarian Socialism",
@@ -96,7 +106,8 @@ const ideologies = [
             "legal": 80,
             "global": 80,
             "social": 20
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "MAGA Socialism",
@@ -105,7 +116,8 @@ const ideologies = [
             "legal": 30,
             "global": 30,
             "social": 80
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Liberalism",
@@ -114,7 +126,8 @@ const ideologies = [
             "legal": 60,
             "global": 70,
             "social": 30
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Social Democracy",
@@ -123,7 +136,8 @@ const ideologies = [
             "legal": 65,
             "global": 80,
             "social": 20
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Religious Democracy",
@@ -132,7 +146,8 @@ const ideologies = [
             "legal": 50,
             "global": 60,
             "social": 65
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Progressivism",
@@ -141,7 +156,8 @@ const ideologies = [
             "legal": 70,
             "global": 80,
             "social": 0
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Imperialist",
@@ -150,7 +166,8 @@ const ideologies = [
             "legal": 0,
             "global": 100,
             "social": 50
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Moderate",
@@ -159,7 +176,8 @@ const ideologies = [
             "legal": 50,
             "global": 50,
             "social": 50
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Moderate Conservative",
@@ -168,7 +186,8 @@ const ideologies = [
             "legal": 50,
             "global": 50,
             "social": 60
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Conservatism",
@@ -177,7 +196,8 @@ const ideologies = [
             "legal": 50,
             "global": 50,
             "social": 70
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Trumpism",
@@ -186,7 +206,8 @@ const ideologies = [
             "legal": 30,
             "global": 30,
             "social": 70
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Religious Fundamentalist",
@@ -195,7 +216,8 @@ const ideologies = [
             "legal": 30,
             "global": 50,
             "social": 80
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Libertarianism",
@@ -204,7 +226,8 @@ const ideologies = [
             "legal": 70,
             "global": 50,
             "social": 50
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Anarcho-Capitalism",
@@ -213,7 +236,8 @@ const ideologies = [
             "legal": 100,
             "global": 50,
             "social": 50
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Capitalist Fascism",
@@ -222,7 +246,8 @@ const ideologies = [
             "legal": 0,
             "global": 50,
             "social": 70
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Capitalist Liberalism",
@@ -231,7 +256,8 @@ const ideologies = [
             "legal": 0,
             "global": 50,
             "social": 30
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Secular Fascism",
@@ -240,7 +266,8 @@ const ideologies = [
             "legal": 0,
             "global": 50,
             "social": 0
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Neo-Liberalism",
@@ -249,7 +276,8 @@ const ideologies = [
             "legal": 50,
             "global": 70,
             "social": 40
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Minarchism",
@@ -258,7 +286,8 @@ const ideologies = [
             "legal": 90,
             "global": 50,
             "social": 50
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Neo-Conservatism",
@@ -267,7 +296,8 @@ const ideologies = [
             "legal": 40,
             "global": 70,
             "social": 60
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Global Anarcho-Communism",
@@ -276,7 +306,8 @@ const ideologies = [
             "legal": 100,
             "global": 100,
             "social": 0
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Global Anarcho-Capitalism",
@@ -285,7 +316,8 @@ const ideologies = [
             "legal": 100,
             "global": 100,
             "social": 50
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Global Theocracy",
@@ -294,7 +326,8 @@ const ideologies = [
             "legal": 50,
             "global": 100,
             "social": 90
-        }
+        },
+        "description": "placeholder"
     },
     {
         "name": "Global Secular Liberalism",
@@ -303,7 +336,8 @@ const ideologies = [
             "legal": 50,
             "global": 100,
             "social": 30
-        }
+        },
+        "description": "placeholder"
     }
 ];
 
