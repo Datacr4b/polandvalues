@@ -69,10 +69,6 @@ function Question() {
 
     return (
         <>
-            <div className="title-container">
-                <h1>ModernPol</h1>
-            </div>
-            <hr></hr>
             <div className="question-number">
                 <h2>Question {questionNumber + 1} of {numOfQuestions}</h2>
             </div>

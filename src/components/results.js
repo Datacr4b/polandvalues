@@ -17,6 +17,8 @@ function Results() {
     let candidate = "";
     let ideologyDescription = "";
     let candidateDescription = "";
+    let icon;
+    let candidateImage;
 
     const e_free = (100.0-e).toFixed(1);
     const l_order = (100.0-l).toFixed(1);
@@ -85,10 +87,10 @@ function Results() {
             if(compareTotal > prevBiggest)
             {
                 prevBiggest = compareTotal;
-                console.log(compareTotal);
-                console.log(candidates[i].name);
                 candidate = candidates[i].name;
                 candidateDescription = candidates[i].description;
+                icon = candidates[i].icon;
+                candidateImage = candidates[i].image;
             }
             compareTotal = 0
         }
@@ -99,8 +101,6 @@ function Results() {
     return (
         <>
             <div className="title-container">
-                <h1>Poland Values</h1>
-                <hr></hr>
                 <h1>Results</h1>
             </div>
             {axes.map(axis => (
@@ -121,10 +121,27 @@ function Results() {
             }
             <br></br>
             <div className="closest-container">
-                <h2><b style={{color: "#B53F47"}}>Closest Match</b>: {ideology}</h2>
-                <p>{ideologyDescription}</p>
-                <h2><b style={{color: "#B53F47"}}>Closest Political Candidate</b>: {candidate}</h2>
-                <p>{candidateDescription}</p>
+                <div className="closest-subcontainer">
+                    <h2><b style={{color: "#B53F47"}}>Closest Match</b>: {ideology}</h2>
+                    <p>{ideologyDescription}</p>
+                </div>
+                <hr></hr>
+                <div className="closest-subcontainer">
+                    <h2><b style={{color: "#B53F47"}}>Closest Political Candidate</b>: {candidate}</h2>
+                    <div className="desc-container">
+                        <div>
+                            <img alt={`${candidate} icon`} height="200px" src={icon} className="candidate-image"></img>
+                        </div>
+                        <div>
+                            <h2>Description :</h2>
+                            <p>{candidateDescription}</p>
+                        </div>
+                        <img alt={`${candidate} icon`} height="250px" src={candidateImage} className="candidate-image"></img>
+                    </div>
+                    <div className="desc-container">
+                        
+                    </div>
+                </div>
             </div>
         </>
     );

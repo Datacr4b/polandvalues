@@ -18,6 +18,33 @@
     margin: 0 auto;
     width: 89.5%;
     float: left;
-    background-color: aliceblue;
+    background-color: #FFFFFF;
     border-radius: 1rem 1rem 0 0;
+}
+
+.closest-subcontainer {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #EDEDED;
+    border-radius: 1rem;
+    padding: 0.75rem;
+}
+
+.candidate-image {
+    border-radius: 2rem;
+    border: 0.3rem solid #222222;
+}
+
+.desc-majorcontainer {
+    display: flex;
+}
+
+.desc-container {
+    display: flex;
+    padding-right: 5rem;
+}
+
+.desc-container > div {
+    margin-right: 1rem;
 }
