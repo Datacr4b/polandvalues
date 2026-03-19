@@ -16,9 +16,9 @@ function Results() {
     let ideology = "";
     let candidate = "";
     let ideologyDescription = "";
-    let candidateDescription = "";
-    let icon;
-    let candidateImage;
+    let candidateDescription = "Default description, in order to get this you must've clicked neutral on literally every question. Congrats I guess.";
+    let icon = candidates[0].icon;
+    let candidateImage = candidates[0].image;
 
     const e_free = (100.0-e).toFixed(1);
     const l_order = (100.0-l).toFixed(1);
@@ -70,7 +70,6 @@ function Results() {
             let array = candidates[i].answers
             for (let x = 0; x < array.length; x++)
             {
-                
                 if (parseFloat(a[x]) === array[x] && parseFloat(a[x]) !== 0.0)
                 {
                     compareTotal += 1;
@@ -87,6 +86,7 @@ function Results() {
             if(compareTotal > prevBiggest)
             {
                 prevBiggest = compareTotal;
+                console.log(candidates[i].name);
                 candidate = candidates[i].name;
                 candidateDescription = candidates[i].description;
                 icon = candidates[i].icon;

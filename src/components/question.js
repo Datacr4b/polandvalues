@@ -49,7 +49,7 @@ function Question() {
             let final_global = calculateScores(global_result + deltaGlobal, maxScores.global);
             let final_social = calculateScores(social_result + deltaSocial, maxScores.social);
 
-            navigate(`/results?e=${final_econ}&l=${final_legal}&g=${final_global}&s=${final_social}&a=[${answerArray},${multiplier}]`);
+            navigate(`/results?e=${final_econ}&l=${final_legal}&g=${final_global}&s=${final_social}&a=${answerArray},${multiplier}`);
 
             return;
         }
