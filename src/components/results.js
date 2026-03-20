@@ -1,5 +1,6 @@
 import React from "react";
 import { communism, environment, freemarket, globalism, conservative, liberty, nationalism, order } from "../images";
+import { surprised } from "../images";
 import "./results.css";
 import { useSearchParams } from "react-router";
 import Bar from "./bar";
@@ -138,8 +139,11 @@ function Results() {
                         </div>
                         <img alt={`${candidate} icon`} height="250px" src={candidateImage} className="candidate-image"></img>
                     </div>
-                    <div className="desc-container">
-                        
+                    <hr></hr>
+                    <div className="surprised-container">
+                        <h1 id="title"><b style={{color: "#B53F47"}}>Poland</b><b>Values</b></h1>
+                        <img alt="surprised icon of poland" height="200px" src={surprised}></img>
+                        <p className="left-rotate-text">Surprised by the results?<br></br>Contribute on our github!</p>
                     </div>
                 </div>
             </div>

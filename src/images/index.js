@@ -8,6 +8,8 @@ export { default as environment } from "./ideologies/environment.png"
 export { default as conservative } from "./ideologies/conservative.png"
 export { default as double_arrow } from "./double_arrow.svg"
 
+export { default as surprised } from "./surprised.png"
+
 export { default as biedron } from "./candidate portraits/biedron.png"
 export { default as mentzen } from "./candidate portraits/mentzen.png"
 export { default as bosak } from "./candidate portraits/bosak.png"
