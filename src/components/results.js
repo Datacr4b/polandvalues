@@ -143,7 +143,7 @@ function Results() {
                     <div className="surprised-container">
                         <h1 id="title"><b style={{color: "#B53F47"}}>Poland</b><b>Values</b></h1>
                         <img alt="surprised icon of poland" height="200px" src={surprised}></img>
-                        <p className="left-rotate-text">Surprised by the results?<br></br>Contribute on our github!</p>
+                        <p className="left-rotate-text">Surprised by the results?<br></br>Contribute on our <a href="https://github.com/Datacr4b/modern-pol">github!</a></p>
                     </div>
                 </div>
             </div>
