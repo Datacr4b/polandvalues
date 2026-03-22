@@ -21,7 +21,7 @@ function MainPage() {
                 <img className="ideology-image" alt="nationalism icon" src={nationalism}></img>&nbsp;
                 <img className="ideology-image" alt="environment icon" src={environment}></img>
             </div>
-            <button className="test-button"><NavLink to="/test">Click to Start Test!</NavLink></button>
+            <button className="test-button"><NavLink to="/weight">Click to Start Test!</NavLink></button>
             <hr></hr>
             <h1><b>What is Poland Values ?</b></h1>
             <p>Poland Values is a political test designed to place you on 4 different ideological axis. Based on those values we will attempt to gauge your political ideology and 
