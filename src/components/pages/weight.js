@@ -25,7 +25,7 @@ function Weight() {
                     </div>
                     <div className="input-container">
                         <label for="global">Geopolitical Issues</label>
-                        <input id="global" type="range" max="2" min="0" step="0.01"></input>
+                        <input id="global" type="range" max="2" min="0" step="0.01">test</input>
                         
                     </div>
                     <br></br>
