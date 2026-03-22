@@ -1,4 +1,4 @@
-import "./bar.css";
+import "./css/bar.css";
 import React from "react";
 
 function Bar(props) {

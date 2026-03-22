@@ -1,5 +1,5 @@
-import { bosak, zandberg, mentzen, nawrocki, morawiecki, tusk, biejat, holownia, czarnek, trzaskowski, maciak, braun, biedron, korwin } from "../images";
-import { bosakImage, zandbergImage, mentzenImage, nawrockiImage, morawieckiImage, tuskImage, biejatImage, holowniaImage, czarnekImage, trzaskowskiImage, maciakImage, braunImage, biedronImage, korwinImage } from "../images";
+import { bosak, zandberg, mentzen, nawrocki, morawiecki, tusk, biejat, holownia, czarnek, trzaskowski, maciak, braun, biedron, korwin } from "../../images";
+import { bosakImage, zandbergImage, mentzenImage, nawrockiImage, morawieckiImage, tuskImage, biejatImage, holowniaImage, czarnekImage, trzaskowskiImage, maciakImage, braunImage, biedronImage, korwinImage } from "../../images";
 
 const candidates = [
     {

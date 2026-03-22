@@ -1,4 +1,4 @@
-import "./weight.css";
+import "../css/weight.css";
 
 function Weight() {
     return (
@@ -7,7 +7,7 @@ function Weight() {
             <div className="form-container">
                 <h1>Choose what issues matter to you most</h1>
                 <br></br>
-                <form>
+                <form action={"/test"}>
                     <div className="input-container">
                         <label for="social">Social Issues</label>
                         <input id="social" type="range" max="2" min="0"></input>

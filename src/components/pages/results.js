@@ -1,11 +1,11 @@
 import React from "react";
-import { communism, environment, freemarket, globalism, conservative, liberty, nationalism, order } from "../images";
-import { surprised } from "../images";
-import "./results.css";
+import { communism, environment, freemarket, globalism, conservative, liberty, nationalism, order } from "../../images";
+import { surprised } from "../../images";
+import "../css/results.css";
 import { useSearchParams } from "react-router";
-import Bar from "./bar";
-import ideologies from "./ideologies";
-import candidates from "./candidates"
+import Bar from "../bar";
+import ideologies from "../objects/ideologies";
+import candidates from "../objects/candidates"
 
 function Results() {
     const [searchParams] = useSearchParams();

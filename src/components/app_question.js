@@ -1,6 +1,6 @@
 import React from "react";
-import Question from "./question";
-import HeaderPage from "./header-page";
+import Question from "./pages/question";
+import HeaderPage from "./pages/header-page";
 
 function AppQuestion() {
     return (

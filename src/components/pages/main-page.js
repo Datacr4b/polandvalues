@@ -1,6 +1,6 @@
 import React from "react";
-import "./main-page.css";
-import { communism, environment, freemarket, globalism, conservative, liberty, nationalism, order, double_arrow } from "../images";
+import "../css/main-page.css";
+import { communism, environment, freemarket, globalism, conservative, liberty, nationalism, order, double_arrow } from "../../images";
 import { NavLink } from "react-router";
 
 function MainPage() {

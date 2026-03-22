@@ -1,6 +1,6 @@
 import React from "react";
-import MainPage from "./main-page";
-import HeaderPage from "./header-page";
+import MainPage from "./pages/main-page";
+import HeaderPage from "./pages/header-page";
 
 function App() {
     return (

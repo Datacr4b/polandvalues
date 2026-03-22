@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
-import "./question.css";
-import questionItems from "./questions";
+import "../css/question.css";
+import questionItems from "../objects/questions";
 import { useNavigate } from "react-router";
 
 function Question() {

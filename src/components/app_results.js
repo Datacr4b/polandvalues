@@ -1,6 +1,6 @@
 import React from "react";
-import Results from "./results";
-import HeaderPage from "./header-page";
+import Results from "./pages/results";
+import HeaderPage from "./pages/header-page";
 
 function AppResults() {
     return (

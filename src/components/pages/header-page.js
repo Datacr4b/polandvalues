@@ -1,6 +1,6 @@
 import React from "react";
-import poland from "../images/poland.png";
-import "./header-page.css";
+import poland from "../../images/poland.png";
+import "../css/header-page.css";
 
 function HeaderPage() {
     return (

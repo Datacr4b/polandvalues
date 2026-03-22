@@ -1,5 +1,5 @@
-import Weight from "./weight";
-import HeaderPage from "./header-page";
+import Weight from "./pages/weight";
+import HeaderPage from "./pages/header-page";
 
 function AppWeight() {
     return (
