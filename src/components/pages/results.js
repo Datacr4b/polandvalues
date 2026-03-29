@@ -64,8 +64,8 @@ function Results() {
                 prevLowest = compareTotal;
                 ideology = ideologies[i].name;
                 ideologyDescription = ideologies[i].description;
-            }
-        }
+            };
+        };
         compareTotal = 0;
         for (let i = 0; i < candidates.length; i++)
         {
@@ -78,50 +78,23 @@ function Results() {
                 if(playerAnswer === 0.0)
                 {
                     continue;
-                }
+                };
 
 
                 if (playerAnswer >= 1.0 && array[x] === 1.0)
                 {
                     compareTotal += playerAnswer;
-                }
+                };
                 if (playerAnswer <= -1.0 && array[x] === -1.0)
                 {
                     compareTotal += Math.abs(playerAnswer);
-                }
-                /*
-                if (playerAnswer >= 0.5 && playerAnswer < 1.0 && array[x] === 0.5)
-                {
-                    compareTotal += playerAnswer;
-                }
-                if (playerAnswer <= -0.5 && playerAnswer > -1.0 && array[x] === -0.5)
-                {
-                    compareTotal += Math.abs(playerAnswer);
-                }
-                */
+                };
                 if (Math.abs(playerAnswer-array[x]) > 0 && Math.abs(playerAnswer-array[x]) <= 0.5)
                 {
                     compareTotal += Math.abs(playerAnswer);
-                }
+                };
+            };
 
-                /*
-                OLD CODE
-
-                if (parseFloat(a[x]) === array[x] && parseFloat(a[x]) !== 0.0)
-                {
-                    compareTotal += 1;
-                }
-                else if (parseFloat(a[x]) === 0.0)
-                {
-                    continue;
-                }
-                else if (parseFloat(a[x])-0.5 === array[x] || parseFloat(a[x])+0.5 === array[x])
-                {
-                    compareTotal += 0.5;
-                }
-                */
-                
-            }
             if(compareTotal > prevBiggest)
             {
                 prevBiggest = compareTotal;
@@ -131,9 +104,9 @@ function Results() {
                 candidateDescription = candidates[i].description;
                 icon = candidates[i].icon;
                 candidateImage = candidates[i].image;
-            }
+            };
             compareTotal = 0
-        }
+        };
     };
 
     calculateMatch();
