@@ -53,6 +53,7 @@ function Results() {
         let compareTotal = 0;
         let prevLowest = 1000000;
         let prevBiggest = 0;
+        let playerAnswer = 0;
 
         for (let i = 0; i < ideologies.length; i++)
         {
@@ -71,6 +72,41 @@ function Results() {
             let array = candidates[i].answers
             for (let x = 0; x < array.length; x++)
             {
+                playerAnswer = parseFloat(a[x]);
+
+                /* Skip neutral answers */
+                if(playerAnswer === 0.0)
+                {
+                    continue;
+                }
+
+
+                if (playerAnswer >= 1.0 && array[x] === 1.0)
+                {
+                    compareTotal += playerAnswer;
+                }
+                if (playerAnswer <= -1.0 && array[x] === -1.0)
+                {
+                    compareTotal += Math.abs(playerAnswer);
+                }
+                /*
+                if (playerAnswer >= 0.5 && playerAnswer < 1.0 && array[x] === 0.5)
+                {
+                    compareTotal += playerAnswer;
+                }
+                if (playerAnswer <= -0.5 && playerAnswer > -1.0 && array[x] === -0.5)
+                {
+                    compareTotal += Math.abs(playerAnswer);
+                }
+                */
+                if (Math.abs(playerAnswer-array[x]) > 0 && Math.abs(playerAnswer-array[x]) <= 0.5)
+                {
+                    compareTotal += Math.abs(playerAnswer);
+                }
+
+                /*
+                OLD CODE
+
                 if (parseFloat(a[x]) === array[x] && parseFloat(a[x]) !== 0.0)
                 {
                     compareTotal += 1;
@@ -83,10 +119,13 @@ function Results() {
                 {
                     compareTotal += 0.5;
                 }
+                */
+                
             }
             if(compareTotal > prevBiggest)
             {
                 prevBiggest = compareTotal;
+                console.log(compareTotal);
                 console.log(candidates[i].name);
                 candidate = candidates[i].name;
                 candidateDescription = candidates[i].description;

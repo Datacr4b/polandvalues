@@ -1,10 +1,15 @@
 import React, { useState, useMemo } from "react";
 import "../css/question.css";
 import questionItems from "../objects/questions";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 
 function Question() {
     const numOfQuestions = questionItems.length;
+    const location = useLocation();
+    const socialWeight = location.state?.valueSocial;
+    const legalWeight = location.state?.valueLegal;
+    const economyWeight = location.state?.valueEconomy;
+    const globalWeight = location.state?.valueGeopolitics;
 
     const [questionNumber, setQuestionNumber] = useState(0);
     const [econArray, setEconArray] = useState([]);
@@ -32,10 +37,11 @@ function Question() {
     const onAnswer = (multiplier) => {
         const q = questionItems[questionNumber].effect;
 
-        const deltaEcon = q.econ * multiplier;
-        const deltaLegal = q.legal * multiplier;
-        const deltaGlobal = q.global * multiplier;
-        const deltaSocial = q.social * multiplier;
+        const deltaEcon = q.econ * multiplier * economyWeight;
+        const deltaLegal = q.legal * multiplier * legalWeight;
+        const deltaGlobal = q.global * multiplier * globalWeight;
+        const deltaSocial = q.social * multiplier * socialWeight;
+        let weightMult = multiplier;
 
         if (questionNumber === numOfQuestions - 1) {
             const econ_result = econArray.reduce((a, b) => a + b, 0);
@@ -58,7 +64,13 @@ function Question() {
         setLegalArray(prev => ([...prev, deltaLegal]));
         setGlobalArray(prev => ([...prev, deltaGlobal]));
         setSocialArray(prev => ([...prev, deltaSocial]));
-        setAnswerArray(prev => ([...prev, multiplier]));
+
+        if(Math.abs(q.econ) > 0) { weightMult *= economyWeight }
+        if(Math.abs(q.legal) > 0) { weightMult *= legalWeight }
+        if(Math.abs(q.global) > 0) { weightMult *= globalWeight }
+        if(Math.abs(q.social) > 0) { weightMult *= socialWeight }
+        
+        setAnswerArray(prev => ([...prev, weightMult]));
 
         setQuestionNumber(prev => (prev + 1));
     };
