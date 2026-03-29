@@ -203,11 +203,21 @@ const ideologies = [
         "name": "Trumpism",
         "stats": {
             "econ": 50,
-            "legal": 30,
+            "legal": 40,
             "global": 30,
             "social": 70
         },
         "description": "The political ideology associated with Donald Trump and the Make America Great Again (MAGA) movement, characterized by right-wing populism, economic nationalism, anti-globalism, immigration restrictionism, skepticism of international institutions, and emphasis on strong executive leadership."
+    },
+    {
+        "name": "MAGA Libertarianism",
+        "stats": {
+            "econ": 20,
+            "legal": 50,
+            "global": 30,
+            "social": 70
+        },
+        "description": "A hybrid political tendency that merges elements of the Make America Great Again (MAGA) movement with libertarian ideas. It typically combines economic nationalism, protectionist trade policies, strict immigration controls, and strong national sovereignty with libertarian emphases on individual liberty, reduced government regulation in domestic economic and social matters, gun rights, free speech, and skepticism toward global institutions and endless foreign interventions. It often supports a strong military and law-and-order approach while opposing bureaucratic overreach, central bank dominance, and certain welfare-state expansions."
     },
     {
         "name": "Religious Fundamentalist",

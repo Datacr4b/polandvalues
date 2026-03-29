@@ -43,30 +43,31 @@ function Weight() {
             {/* TODO weight margin choices */}
             <div className="form-container">
                 <h1>Choose what issues matter to you most</h1>
+                <p>These multipliers WILL affect your answers. A "0x" multiplier is the equivalent of an answer of this type being disregarded.</p>
                 <br></br>
                 <form onSubmit={onSubmitForm}>
                     <div className="weight-container">
                         <div className="input-container">
                             <label for="social">Social Issues</label>
-                            <p>{valueSocial}</p>
+                            <p>{valueSocial}x</p>
                             <input id="social" type="range" max="2" min="0" step="0.01" value={valueSocial} onChange={onValueChange}></input>
                             
                         </div>
                         <div className="input-container">
                             <label for="legal">Legal Issues</label>
-                            <p>{valueLegal}</p>
+                            <p>{valueLegal}x</p>
                             <input id="legal" type="range" max="2" min="0" step="0.01" value={valueLegal} onChange={onValueChange}></input>
                         
                         </div>
                         <div className="input-container">
                             <label for="economic">Economic Issues</label>
-                            <p>{valueEconomy}</p>
+                            <p>{valueEconomy}x</p>
                             <input id="economic" type="range" max="2" min="0" step="0.01" value={valueEconomy} onChange={onValueChange}></input>
                             
                         </div>
                         <div className="input-container">
                             <label for="global">Geopolitical Issues</label>
-                            <p>{valueGeopolitics}</p>
+                            <p>{valueGeopolitics}x</p>
                             <input id="global" type="range" max="2" min="0" step="0.01" value={valueGeopolitics} onChange={onValueChange}></input>
                         </div>
                     </div>
