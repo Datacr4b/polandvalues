@@ -24,14 +24,14 @@ function Question() {
         () => { 
             return questionItems.reduce(
                 (acc, q) => {
-                    acc.econ += Math.abs(q.effect.econ);
-                    acc.legal += Math.abs(q.effect.legal);
-                    acc.global += Math.abs(q.effect.global);
-                    acc.social += Math.abs(q.effect.social);
+                    acc.econ += Math.abs(q.effect.econ * economyWeight);
+                    acc.legal += Math.abs(q.effect.legal * legalWeight);
+                    acc.global += Math.abs(q.effect.global * globalWeight);
+                    acc.social += Math.abs(q.effect.social * socialWeight);
                     return acc;
                 },{ econ: 0, legal: 0, global: 0, social: 0 }
             );
-        },[]
+        },[economyWeight, legalWeight, globalWeight, socialWeight]
     );
 
     const onAnswer = (multiplier) => {
@@ -65,10 +65,10 @@ function Question() {
         setGlobalArray(prev => ([...prev, deltaGlobal]));
         setSocialArray(prev => ([...prev, deltaSocial]));
 
-        if(Math.abs(q.econ) > 0) { weightMult *= economyWeight }
-        if(Math.abs(q.legal) > 0) { weightMult *= legalWeight }
-        if(Math.abs(q.global) > 0) { weightMult *= globalWeight }
-        if(Math.abs(q.social) > 0) { weightMult *= socialWeight }
+        if(Math.abs(q.econ) > 2) { weightMult *= economyWeight }
+        if(Math.abs(q.legal) > 2) { weightMult *= legalWeight }
+        if(Math.abs(q.global) > 2) { weightMult *= globalWeight }
+        if(Math.abs(q.social) > 2) { weightMult *= socialWeight }
         
         setAnswerArray(prev => ([...prev, weightMult]));
 

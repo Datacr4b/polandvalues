@@ -39,7 +39,7 @@ const candidates = [
     },
     {
         "name": "Donald Tusk",
-        "answers": [-0.5,-1,1,-0.5,1,1,0,-0.5,0.5,0.5,0,1,-1,0,0.5,-1,1,0.5,1,1,0,-1,0.5,1,1,0.5,0,0.5,1,-1,0,1,0.5,0,-1,-1,-1,1,-0.5,1,1,-1,0,0.5,1,-1,0.5,1,0.5,0,-1,1,1,1,0,-1,0.5,1,-1,-1,0.5,-1,-1,0,-1,0,0,-1,-1,0,-1,-1,-1,-1,1,1,1,-1,0,-1,0.5,0.5,-1,-1,-1,-0.5,-1,1,1,-1,-1,-1,-1,-1,1],
+        "answers": [-0.5,-1,1,-0.5,1,1,0,-0.5,0.5,0.5,0,1,-1,0,0.5,-1,1,0.5,1,1,0,-1,0.5,1,1,0.5,0,0.5,1,-1,0,1,0.5,0,-1,-1,-1,1,-0.5,1,1,-1,0,0.5,1,-1,0.5,1,0.5,0,-1,1,1,1,0,-1,0.5,1,-1,-1,0.5,-1,0,0,-1,-1,0,-1,-1,0,-1,-1,-1,-1,1,1,1,-1,0,-1,0.5,0.5,-1,-1,-1,-0.5,-1,1,1,-1,-1,-1,-1,-1,1],
         "description": "Donald Tusk is a Polish centrist politician and current Prime Minister affiliated with the Civic Platform (PO) party, previously serving as President of the European Council (2014–2019). His key positions include strong support for EU integration, promotion of liberal economic policies, and advocacy for judicial reforms and pro-European foreign relations.",
         icon: tusk,
         image: tuskImage // tusk
@@ -53,7 +53,7 @@ const candidates = [
     },
     {
         "name": "Szymon Hołownia",
-        "answers": [-0.5,-1,1,0,1,1,-0.5,-0.5,0.5,0.5,0,1,-0.5,0.5,0.5,-1,0.5,0.5,1,0.5,0,-1,0.5,1,1,0.5,1,0.5,0.5,-1,0,1,0.5,0,-1,-1,-1,1,-0.5,1,0.5,-1,0,0.5,1,-1,0,1,0,0,-1,1,1,1,0,-1,0,1,0,-1,0.5,-1,-0.5,0,-1,0,-0.5,-1,-1,0,-1,-1,-1,-1,1,1,1,-1,0,0,0,1,-1,-1,-1,-0.5,-1,0,1,-1,-1,-1,-1,-1,0.5],
+        "answers": [-0.5,-1,1,0,1,1,-0.5,-0.5,0.5,0.5,0,1,-0.5,0.5,0.5,-1,0.5,0.5,1,0.5,0,-1,0.5,1,1,0.5,1,0.5,0.5,-1,0,1,0.5,0,-1,-1,-1,1,-0.5,1,0.5,-1,0,0.5,1,-1,0,1,0,0,-1,1,1,1,0,-1,0,1,0,-1,0.5,-1,0,0,-1,-0.5,-0.5,-1,-1,0,-1,-1,-1,-1,1,1,1,-1,0,0,0,1,-1,-1,-1,-0.5,-1,0,1,-1,-1,-1,-1,-1,0.5],
         "description": "Szymon Hołownia is a Polish centre-right politician and former television personality who founded the Poland 2050 party and served as Marshal of the Sejm (2023–2025). His key positions include support for environmental sustainability and green policies, promotion of demographic reforms, and advocacy for pro-EU integration with a focus on modernization.",
         icon: holownia,
         image: holowniaImage // holownia
@@ -67,21 +67,21 @@ const candidates = [
     },
     {
         "name": "Rafał Trzaskowski",
-        "answers": [-0.5,-1,1,-0.5,1,1,0,-1,0.5,0.5,1,0,1,-0.5,-0.5,0.5,-1,0.5,0.5,1,1,0,-1,0.5,1,1,0.5,0.5,0.5,1,-1,0,1,0.5,0,-1,-1,-1,1,-0.5,1,0.5,-1,0,0.5,1,-1,0.5,1,0.5,0,-1,1,1,1,0,-1,0.5,1,-1,-1,1,-1,-1,0,-1,0,0,-1,-1,0,-1,-1,-1,-1,1,1,1,0,0,-1,0.5,0.5,-1,-1,-1,-0.5,-0.5,1,1,-1,-1,-1,-1,-1],
+        "answers": [-0.5,-1,1,-0.5,1,1,0,-1,0.5,0.5,1,0,1,-0.5,-0.5,0.5,-1,0.5,0.5,1,1,0,-1,0.5,1,1,0.5,0.5,0.5,1,-1,0,1,0.5,0,-1,-1,-1,1,-0.5,1,0.5,-1,0,0.5,1,-1,0.5,1,0.5,0,-1,1,1,1,0,-1,0.5,1,-1,-1,1,-1,0,-1,-1,0,0,-1,-1,0,-1,-1,-1,-1,1,1,1,0,0,-1,0.5,0.5,-1,-1,-1,-0.5,-0.5,1,1,-1,-1,-1,-1,-1],
         "description": "Rafał Trzaskowski is a Polish liberal politician and Mayor of Warsaw affiliated with the Civic Platform (PO) party. His key positions include support for LGBTQ+ rights and secular policies, promotion of pro-EU integration and urban development, and advocacy for liberal reforms in areas like abortion and judicial independence.",
         icon: trzaskowski,
         image: trzaskowskiImage // trzaskowski
     },
     {
         "name": "Maciej Maciak",
-        "answers": [1,1,1,1,0,1,1,0,1,1,-1,1,1,1,-1,-0.5,0,1,-0.5,1,-1,-1,0.5,-1,1,-1,-1,0,1,-1,0,-1,1,0,1,-1,-1,-0.5,-1,0,0.5,-1,0,-1,-1,0.5,-1,0,0.5,1,1,0.5,-1,-1,1,1,0,0,0,0,0,-1,0,0,0,1,0,-1,-1,0,-1,-1,-1,-1,1,1,1,0,-1,0,0.5,-1,-1,-1,-1,-1,-1,-1,0,0,-1,0,-1,0,0],
+        "answers": [1,1,1,1,0,1,1,0,1,1,-1,1,1,1,-1,-0.5,0,1,-0.5,1,-1,-1,0.5,-1,1,-1,-1,0,1,-1,0,-1,1,0,1,-1,-1,-0.5,-1,0,0.5,-1,0,-1,-1,0.5,-1,0,0.5,1,1,0.5,-1,-1,1,1,0,0,0,0,0,-1,0,1,0,0,0,-1,-1,0,-1,-1,-1,-1,1,1,1,0,-1,0,0.5,-1,-1,-1,-1,-1,-1,-1,0,0,-1,0,-1,0,0],
         "description": "Maciej Maciak is a Polish journalist-turned-politician and leader of the Prosperity and Peace Movement (RDiP), a socio-political group focused on anti-establishment themes. His key positions include advocacy for peace-oriented foreign policy and reduced involvement in conflicts, support for access to affordable energy sources, and emphasis on economic prosperity through pragmatic diplomatic relations with neighbors.",
         icon: maciak,
         image: maciakImage // maciak
     },
     {
         "name": "Grzegorz Braun",
-        "answers": [-1,-1,1,-1,1,1,0,-1,-1,-1,1,-0.5,-0.5,0.5,1,-1,1,1,1,1,1,1,1,-1,1,-1,-1,0.5,1,-1,1,-1,1,1,1,-1,1,-0.5,-1,-1,0.5,-1,-1,-1,-1,-1,-1,-1,-1,1,-1,1,-1,-1,1,-1,-1,-1,1,1,-1,-1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,-1,-1,1,1,1,-1,1,1,-1,-1,-1,-1,-1,1,-1,-1,0,0],
+        "answers": [-1,-1,1,-1,1,1,0,-1,-1,-1,1,-0.5,-0.5,0.5,1,-1,1,1,1,1,1,1,1,-1,1,-1,-1,0.5,1,-1,1,-1,1,1,1,-1,1,-0.5,-1,-1,0.5,-1,-1,-1,-1,-1,-1,-1,-1,1,-1,1,-1,-1,1,-1,-1,-1,1,1,-1,-1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,-1,-1,1,1,1,-1,1,1,-1,-1,-1,-1,-1,1,-1,-1,1,0],
         "description": "Grzegorz Braun is a Polish far-right politician, leader of the Confederation of the Polish Crown, and a current Member of the European Parliament. His key positions include strong nationalism and monarchism, criticism of foreign influence in the country's politics, and advocacy for traditional Catholic values.",
         icon: braun,
         image: braunImage // braun

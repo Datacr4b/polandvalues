@@ -558,16 +558,7 @@ const questionItems = [
         }
     },
     {
-        "question": "Transgender surgeries should be illegal",
-        "effect": {
-            "econ": 2,
-            "legal": -5,
-            "global": 0,
-            "social": 5
-        }
-    },
-    {
-        "question": "Transgender treatments shouldn't be covered by insurance",
+        "question": "Transgender treatments (surgeries, hormones etc.) shouldn't be covered by insurance",
         "effect": {
             "econ": -10,
             "legal": 2,
@@ -576,7 +567,7 @@ const questionItems = [
         }
     },
     {
-        "question": "Transgender-affirming treatments should be illegal",
+        "question": "Transgender-affirming treatments (f.e hormones) should be illegal for underage people",
         "effect": {
             "econ": 0,
             "legal": -2,
@@ -585,10 +576,19 @@ const questionItems = [
         }
     },
     {
-        "question": "Transgender-affirming treatments should be illegal for underage people",
+        "question": "Transgender-affirming treatments (f.e hormones) should be illegal",
         "effect": {
             "econ": 0,
             "legal": -2,
+            "global": 0,
+            "social": 5
+        }
+    },
+    {
+        "question": "Transgender surgeries (f.e phalloplasty) should be illegal",
+        "effect": {
+            "econ": 2,
+            "legal": -5,
             "global": 0,
             "social": 5
         }

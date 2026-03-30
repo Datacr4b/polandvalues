@@ -51,61 +51,49 @@ function Results() {
 
     const calculateMatch = () => {
         let compareTotal = 0;
-        let prevLowest = 1000000;
-        let prevBiggest = 0;
-        let playerAnswer = 0;
+        let lowestScore = Infinity;
 
         for (let i = 0; i < ideologies.length; i++)
         {
 
             compareTotal = (Math.abs(e - ideologies[i].stats.econ)) + (Math.abs(l - ideologies[i].stats.legal)) + (Math.abs(g - ideologies[i].stats.global)) + (Math.abs(s - ideologies[i].stats.social))
-            if (compareTotal < prevLowest)
+            if (compareTotal < lowestScore)
             {
-                prevLowest = compareTotal;
+                lowestScore = compareTotal;
                 ideology = ideologies[i].name;
                 ideologyDescription = ideologies[i].description;
             };
         };
+
         compareTotal = 0;
+        lowestScore = Infinity;
         for (let i = 0; i < candidates.length; i++)
         {
             let array = candidates[i].answers
+            compareTotal = 0;
+
+
             for (let x = 0; x < array.length; x++)
             {
-                playerAnswer = parseFloat(a[x]);
+                let playerAnswer = parseFloat(a[x]);
+                let candidateAnswer = array[x];
 
-                /* Skip neutral answers */
-                if(playerAnswer === 0.0)
-                {
-                    continue;
-                };
-
-
-                if (playerAnswer >= 1.0 && array[x] === 1.0)
-                {
-                    compareTotal += playerAnswer;
-                };
-                if (playerAnswer <= -1.0 && array[x] === -1.0)
-                {
-                    compareTotal += Math.abs(playerAnswer);
-                };
-                if (Math.abs(playerAnswer-array[x]) > 0 && Math.abs(playerAnswer-array[x]) <= 0.5)
-                {
-                    compareTotal += Math.abs(playerAnswer);
-                };
+                compareTotal += Math.abs(playerAnswer - candidateAnswer)
             };
 
-            if(compareTotal > prevBiggest)
+            if(compareTotal < lowestScore)
             {
-                prevBiggest = compareTotal;
+                lowestScore = compareTotal;
+
+                /* DEBUG */
                 console.log(compareTotal);
                 console.log(candidates[i].name);
+
                 candidate = candidates[i].name;
                 candidateDescription = candidates[i].description;
                 icon = candidates[i].icon;
                 candidateImage = candidates[i].image;
             };
-            compareTotal = 0
         };
     };
 
