@@ -40,6 +40,14 @@
     margin-right: 1rem;
 }
 
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
 #submit-button {
     background-color: rgb(45, 159, 252);
     color: white;

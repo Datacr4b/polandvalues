@@ -50,25 +50,25 @@ function Weight() {
                         <div className="input-container">
                             <label for="social">Social Issues</label>
                             <p>{valueSocial}x</p>
-                            <input id="social" type="range" max="2" min="0" step="0.01" value={valueSocial} onChange={onValueChange}></input>
+                            <input className="slider" id="social" type="range" max="2" min="0" step="0.01" value={valueSocial} onChange={onValueChange}></input>
                             
                         </div>
                         <div className="input-container">
                             <label for="legal">Legal Issues</label>
                             <p>{valueLegal}x</p>
-                            <input id="legal" type="range" max="2" min="0" step="0.01" value={valueLegal} onChange={onValueChange}></input>
+                            <input className="slider" id="legal" type="range" max="2" min="0" step="0.01" value={valueLegal} onChange={onValueChange}></input>
                         
                         </div>
                         <div className="input-container">
                             <label for="economic">Economic Issues</label>
                             <p>{valueEconomy}x</p>
-                            <input id="economic" type="range" max="2" min="0" step="0.01" value={valueEconomy} onChange={onValueChange}></input>
+                            <input className="slider" id="economic" type="range" max="2" min="0" step="0.01" value={valueEconomy} onChange={onValueChange}></input>
                             
                         </div>
                         <div className="input-container">
                             <label for="global">Geopolitical Issues</label>
                             <p>{valueGeopolitics}x</p>
-                            <input id="global" type="range" max="2" min="0" step="0.01" value={valueGeopolitics} onChange={onValueChange}></input>
+                            <input className="slider" id="global" type="range" max="2" min="0" step="0.01" value={valueGeopolitics} onChange={onValueChange}></input>
                         </div>
                     </div>
                     <br></br>
